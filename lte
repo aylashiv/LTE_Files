@@ -1,0 +1,21 @@
+nodetach
+nolock
+/dev/ttyUSB3 //Must be your own device descriptor for EC20 USB Modem Port.
+115200
+user "airtel" //Modify your user name here if necessary, it’s null in example.
+password "1234" //Modify your password here if necessary, it’s null in example.
+nocrtscts
+modem
+hide-password
+usepeerdns
+noauth
+noipdefault
+novj
+novjccomp
+noccp
+debug
+defaultroute
+ipcp-accept-local
+ipcp-accept-remote
+connect 'chat -s -v -f /etc/ppp/peers/lte-chat-connect'
+disconnect 'chat -s -v -f /etc/ppp/peers/lte-chat-disconnect' 

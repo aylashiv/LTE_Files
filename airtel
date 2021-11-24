@@ -1,0 +1,11 @@
+hide-password
+noauth
+connect "/usr/sbin/chat -v -f /etc/chatscripts/airtel"
+debug
+/dev/ttyUSB3
+460800
+#defaultroute
+replacedefaultroute
+noipdefault
+user "airtel"
+remotename airtel
